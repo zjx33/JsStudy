@@ -20,3 +20,18 @@ function sum(num1, num2) {
 // const tmp=foo.hycall({});
 const tmp = sum.hycall({ name: "z" }, 1, 2)
 console.log(tmp)
+
+
+Function.prototype.hycall = function (thisArg,args) {
+    var fn = this;//fn=foo
+    thisArg = thisArg ? Object(thisArg) : window
+    thisArg.fn = fn;
+    return thisArg.fn(...args)
+}
+function foo() {
+
+}
+function sum() {
+
+}
+var zzz=foo.hycall({},[20,30])
