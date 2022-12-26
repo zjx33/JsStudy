@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 这里要加type="module",如果不加就会报错， 默认情况下，script这样src他只会将其当一个普通的js去解析,如果在普通的js里面你还使用了import模块这个关键字那肯定就会报错了，所以为了告诉他待会加载的这个东西是模块并且要按照模块的方式去解析他，就在后面加一个type="module"-->
+    <script src='./main.js' type="module"></script>
+</body>
+
+</html>
