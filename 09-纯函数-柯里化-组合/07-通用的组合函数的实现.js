@@ -31,6 +31,4 @@ console.log(newFn(10))
 //     var result = fns[i].apply(this, Array.isArray(args) ? args : [args])
 //     args = result;
 // }
-// 这样写为什么不行呢？现在可以了，因为apply后面肯定是要跟数组的，但是我之前是这样写的，我的第31行
-// var result=fns[i].apply(this,args)
-// 然后现在的第31行是改了之后正确的，也就是要判断一下，是否是数组
+// 这样写为什么不行呢？
